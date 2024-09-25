@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donut Delight</title>
+  </head>
+  <body>
+    <!-- Header untuk judul toko -->
+    <header>
+      <h1>Selamat Datang di Donut Delight!</h1>
+      <h2>Toko Donat Terbaik di Kota Anda</h2>
+    </header>
+
+    <!-- Deskripsi tentang toko -->
+    <section>
+      <p>
+        Donut Delight menawarkan berbagai macam donat lezat, dari donat klasik
+        hingga rasa-rasa unik yang hanya bisa Anda temukan di sini. Semua dibuat
+        segar setiap hari!
+      </p>
+    </section>
+
+    <!-- Daftar donat populer -->
+    <section>
+      <h3>Donat Populer</h3>
+      <ul>
+        <li>Donat Cokelat</li>
+        <li>Donat Stroberi</li>
+        <li>Donat Keju</li>
+        <li>Donat Matcha</li>
+      </ul>
+    </section>
+
+    <!-- Tabel menu dengan harga -->
+    <section>
+      <h3>Menu dan Harga</h3>
+      <table>
+        <tr>
+          <th>Nama Donat</th>
+          <th>Harga</th>
+        </tr>
+        <tr>
+          <td>Donat Cokelat</td>
+          <td>Rp 10.000</td>
+        </tr>
+        <tr>
+          <td>Donat Stroberi</td>
+          <td>Rp 12.000</td>
+        </tr>
+        <tr>
+          <td>Donat Keju</td>
+          <td>Rp 11.000</td>
+        </tr>
+        <tr>
+          <td>Donat Matcha</td>
+          <td>Rp 15.000</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Form pemesanan donat -->
+    <section>
+      <h3>Pesan Donat Anda Sekarang!</h3>
+      <form action="/submit-order" method="POST">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required /><br /><br />
+
+        <label for="donat">Pilih Donat:</label>
+        <select id="donat" name="donat">
+          <option value="cokelat">Donat Cokelat</option>
+          <option value="stroberi">Donat Stroberi</option>
+          <option value="keju">Donat Keju</option>
+          <option value="matcha">Donat Matcha</option></select
+        ><br /><br />
+
+        <label for="jumlah">Jumlah:</label>
+        <input
+          type="number"
+          id="jumlah"
+          name="jumlah"
+          min="1"
+          required
+        /><br /><br />
+
+        <input type="submit" value="Pesan Sekarang" />
+      </form>
+    </section>
+
+    <!-- Gambar donat -->
+    <section>
+      <h3>Penampakan Donat Lezat Kami</h3>
+      <img src="donat.jpg" alt="Foto Donat Lezat" width="300" />
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; 2024 Donut Delight |
+        <a href="mailto:info@donutdelight.com">Hubungi Kami</a>
+      </p>
+    </footer>
+  </body>
+</html>
